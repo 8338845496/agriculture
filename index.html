@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+    <div class="topbar" style="background-color: #0c7a59;">
+        <div class="row align-items-center">
+            <!-- Left Section -->
+            <div class="col-md-3 d-flex align-items-center topbar-socials">
+                <a href="https://www.twitter.com/owa_training" target="_blank" rel="noreferrer">
+                    <i class="fa-brands fa-twitter" style="color: #aab8c2"></i>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100092750890486" target="_blank">
+                    <i class="fa-brands fa-facebook" style="color: #316FF6;"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/odisha-water-academy-bhubaneswar/" target="_blank">
+                    <i class="fa-brands fa-linkedin" style="color: #0077B5;"></i>
+                </a>
+                <a href="https://www.instagram.com/oua_odisha" target="_blank">
+                    <i class="fa-brands fa-instagram" style="color: #fa7e1e;"></i>
+                </a>
+            </div>
+    
+            <!-- Center Section -->
+            <div class="col-md-6 topbar-info text-center">
+                <a href="https://odisha.gov.in" target="_blank" style="color: whitesmoke;">Government of Odisha | ଓଡ଼ିଶା ସରକାର</a>
+                <br>
+                <span><i class="fa-solid fa-phone" style="color: #2dcd7c;"></i> +91-1234567899</span>
+            </div>
+    
+            <!-- Right Section -->
+            <div class="col-md-3 topbar-right d-flex justify-content-end">
+                <ul class="d-flex list-unstyled">
+                    <li><a href="#" id="toggleSearch" title="Site Search"><img src="img/ico-site-search.png" alt=""></a></li>
+                    <li><a href="/screen-reader" title="Screen Reader Access"><img loading="lazy" alt="Screen Reader Access" src="img/ico-skip.png"></a></li>
+                    <li><a class="fontincrease" title="Increase font size"><img src="img/screen-reader.png" alt=""></a></li>
+                    <li><a class="fontreset" title="Reset font size"><img src="img/ico-accessibility.png" alt=""></a></li>
+                    <li><a class="fontdecrease" title="Decrease font size"><img src="img/ico-sitemap.png" alt=""></a></li>
+                    <li><a href="#" title="Odia Decrease font size" style="color: white;">ଓଡିଆ</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="d-flex justify-content-between align-items-center sticky-top shadow-sm px-3" id="headerbar" >
+      <!-- Left Section: Logo -->
+      <div class="d-flex align-items-center" id="toplogo">
+          <a href="/">
+              <img src="img/logo-odisha.png" alt="Logo" class="img-fluid" />
+          </a>
+          <div id="logoname" class="ms-3">
+              <p class="fw-medium fs-5 m-0" style="color: #003b49;">ଓଡ଼ିଶା କୃଷି ପ୍ରୋତ୍ସାହନ ଏବଂ ପୁଞ୍ଜି ଲଗାଣ ନିଗମ ଲିଃ <br>
+                The Agricultural Promotion and Investment <br>
+                Corporation of Odisha Limited (APICOL)</p>
+          </div>
+      </div>
+  
+      <!-- Center Section: Navigation (Desktop) -->
+      <div class="d-none d-md-flex " id="menuresponsive" >
+        <ul class="nav mx-auto">
+            <li class="nav-item"><a class="nav-link" href="/Filmcity/home">Home</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link " href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   About Us <span class="dropdown-icon">+</span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                    <li><a class="dropdown-item" href="/Filmcity/about_filmcity"></a></li>
+                    <li><a class="dropdown-item" href="/Filmcity/filmcity_history">About APICOL</a></li>
+                    <li><a class="dropdown-item" href="/Filmcity/fact_file">Board of Directors</a></li>
+                    <li><a class="dropdown-item" href="/Filmcity/board_of_directors">Organogram</a></li>
+                  
+                </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="/Filmcity/photo_gallery"> Activities</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link " href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Schemes<span class="dropdown-icon">+</span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                    <li><a class="dropdown-item" href="/Filmcity/facilities">Mukhyamantri Krushi Udyog Yojana (MKUY)</a></li>
+                    <li><a class="dropdown-item" href="/Filmcity/cultural_contribution_fiscal_concession">Agriculture Entrepreneurship Promotion Scheme</a></li>
+                    <li><a class="dropdown-item" href="/Filmcity/Template1/nmic-museum">PM Formalisation of Micro Food Processing Enterprises Scheme</a></li>
+                    <li><a class="dropdown-item" href="/Filmcity/Template1/nmic-museum">Agriculture Export Policy</a></li> 
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link " href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Apply Online<span class="dropdown-icon">+</span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                    <li><a class="dropdown-item" href="/Filmcity/facilities">Mukhyamantri Krushi Udyog Yojana (MKUY)</a></li>
+                    <li><a class="dropdown-item" href="/Filmcity/cultural_contribution_fiscal_concession">Agriculture Entrepreneurship Promotion Scheme</a></li>
+                    <li><a class="dropdown-item" href="/Filmcity/Template1/nmic-museum">PM Formalisation of Micro Food Processing Enterprises Scheme</a></li>
+                    <li><a class="dropdown-item" href="/Filmcity/Template1/nmic-museum">Agriculture Export Policy</a></li> 
+                </ul>
+            </li>
+            
+            <li class="nav-item"><a class="nav-link" href="contactus.html">Notices</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link " href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Reports<span class="dropdown-icon">+</span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                    <li><a class="dropdown-item" href="/Filmcity/facilities">Annual Reports</a></li>
+                    <li><a class="dropdown-item" href="/Filmcity/cultural_contribution_fiscal_concession">Study Reports</a></li>
+                   
+                </ul>
+            </li>
+           
+           
+        </ul>
+    </div>
+    
+  
+      <!-- Right Section -->
+      <div class="d-flex align-items-center">
+          <!-- Shri Mohan Charan Majhi Details -->
+          <div id="hcmresponsive" class="text-end d-none d-md-block me-3">
+              <strong>Shri Mohan Charan Majhi</strong>
+              <p class="mb-0" style="white-space: pre-line;">Hon'ble Chief Minister</p>
+          </div>
+          <img src="img/hcmodisha_1_a06cb6d8a7.png" alt="Image" id="header-image" class="img-fluid d-none d-md-block" style="width: 50px;" />
+          <!-- Mobile Toggle Button -->
+          <button class="btn btn-outline-primary d-md-none ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav" aria-controls="mobileNav">
+              <i class="fas fa-bars"></i>
+          </button>
+      </div>
+  </div>
+  
+  <!-- Offcanvas Menu for Mobile -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
+      <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="mobileNavLabel">Menu</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+          <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="img//Filmcity/home">Home</a></li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link " href="#" id="mobileDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">About Us  <span class="dropdown-icon">+</span></a>
+                  <ul class="dropdown-menu" aria-labelledby="mobileDropdown1">
+                      <li><a class="dropdown-item" href="/Filmcity/about_filmcity">ABOUT APICOL</a></li>
+                      <li><a class="dropdown-item" href="/Filmcity/filmcity_history">Board of Directors</a></li>
+                      <li><a class="dropdown-item" href="/Filmcity/fact_file">Organogram</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="/Filmcity/photo_gallery">Activities</a></li>
+             
+              <li class="nav-item dropdown">
+                <a class="nav-link " href="#" id="mobileDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">Schemes <span class="dropdown-icon">+</span></a>
+                <ul class="dropdown-menu" aria-labelledby="mobileDropdown1">
+                    <li><a class="dropdown-item" href="/Filmcity/about_filmcity">Mukhyamantri Krushi Udyog Yojana (MKUY)</a></li>
+                    <li><a class="dropdown-item" href="/Filmcity/filmcity_history">Mukhyamantri Krushi Udyog Yojana (MKUY)</a></li>
+                    <li><a class="dropdown-item" href="/Filmcity/fact_file">Mukhyamantri Krushi Udyog Yojana (MKUY)</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link " href="#" id="mobileDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">Apply Online <span class="dropdown-icon">+</span></a>
+                <ul class="dropdown-menu" aria-labelledby="mobileDropdown1">
+                    <li><a class="dropdown-item" href="/Filmcity/about_filmcity">Mukhyamantri Krushi Udyog Yojana (MKUY)</a></li>
+                    <li><a class="dropdown-item" href="/Filmcity/filmcity_history">Mukhyamantri Krushi Udyog Yojana (MKUY)</a></li>
+                    <li><a class="dropdown-item" href="/Filmcity/fact_file">Mukhyamantri Krushi Udyog Yojana (MKUY)</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="img//Filmcity/home">Notices</a></li> 
+            
+            <li class="nav-item dropdown">
+                <a class="nav-link " href="#" id="mobileDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">Reports<span class="dropdown-icon">+</span></a>
+                <ul class="dropdown-menu" aria-labelledby="mobileDropdown1">
+                    <li><a class="dropdown-item" href="/Filmcity/about_filmcity">Annual Reports</a></li>
+                    <li><a class="dropdown-item" href="/Filmcity/filmcity_history">Study Reports<a></li>
+           
+                </ul>
+            </li>
+          </ul>
+          
+      </div> 
+  </div>
+  
+  <!-- CSS -->
+  <style>
+      @media (max-width: 767px) {
+          #menuresponsive {
+              display: none;
+          }
+          #hcmresponsive img {
+              width: 40px;
+          }
+          #hcmresponsive {
+              display: flex;
+              align-items: center;
+          }
+      }
+  </style>
+  </header>
+
+
+
+
+
+  <section id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <!-- Video Slide 1 -->
+      <div class="carousel-item active">
+        <video class="d-block w-100" autoplay loop muted>
+          <source src="video/apicol (1).mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+     
+    </div>
+  
+    <!-- Controls (optional) -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </section>
+  
+  
+  <div class="container section-container">
+    <div class="row">
+      <div class="col-lg-6 mb-4">
+        <div class="latest-update">
+          <h4>Latest Update</h4>
+          <p>Stay tuned for the most recent updates and improvements coming your way.</p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="update-news">
+          <h4>Update News</h4>
+          <p>New features and enhancements will be launched soon. Check back for updates!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+ <section class="container my-5 py-5 bg-light rounded-3 shadow-sm">
+    <div class="row align-items-center">
+      <!-- Left Side: Title and Paragraph -->
+      <div class="col-md-6">
+        <h2 class="display-5 font-weight-bold">Welcome to <span class="">The Agricultural Promotion and Investment Corporation of Odisha Limited (APICOL)</span></h2>
+        <p class="mt-4 font-weight-bold">Established on 01-03-1996, APICOL aims to promote agro-based industries, food processing, and commercial agriculture across Odisha. Our goal is to drive investment in agriculture and allied sectors, offering guidance for project formulation, enterprise development, and project implementation.</p>
+      </div>
+  
+      <!-- Right Side: Two Profile Cards -->
+      <div class="col-md-6">
+        <div class="d-flex justify-content-between">
+          <!-- Card 1 -->
+          <div class="card card-3d shadow-lg" style="width: 48%; border-radius: 10px;">
+            <img src="https://via.placeholder.com/150" class="card-img-top rounded-circle mx-auto d-block p-3" alt="Profile 1">
+            <div class="card-body text-center">
+              <h5 class="card-title">Dr. Arabinda Kumar Padhee, IAS</h5>
+              <p class="card-text text-muted">Principal Secretary, Department of Agriculture and Farmers' Empowerment</p>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="card card-3d shadow-lg" style="width: 48%; border-radius: 10px;">
+            <img src="https://via.placeholder.com/150" class="card-img-top rounded-circle mx-auto d-block p-3" alt="Profile 2">
+            <div class="card-body text-center">
+              <h5 class="card-title">Prem Chandra Chaudhary, IAS</h5>
+              <p class="card-text text-muted">Director of Agriculture & Food Production, Odisha and Managing Director, APICOL</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  
+  
+  <div class="container-fluid tender">
+  <div class="container mt-4 ">
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <ul class="nav nav-tabs" id="myTabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="tenders-tab" data-bs-toggle="tab" href="#tenders" role="tab" aria-controls="tenders" aria-selected="true">Tenders</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="events-tab" data-bs-toggle="tab" href="#events" role="tab" aria-controls="events" aria-selected="false">Events</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="recruitment-tab" data-bs-toggle="tab" href="#recruitment" role="tab" aria-controls="recruitment" aria-selected="false">Recruitment</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="notifications-tab" data-bs-toggle="tab" href="#notifications" role="tab" aria-controls="notifications" aria-selected="false">Notifications</a>
+          </li>
+        </ul>
+
+        <div class="tab-content" id="myTabsContent">
+          <!-- Tenders Tab Content -->
+          <div class="tab-pane fade show active" id="tenders" role="tabpanel" aria-labelledby="tenders-tab">
+            <h4>Latest Tenders</h4>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Tender for IT Services</h5>
+                <p class="card-text">Deadline: 30th December 2024</p>
+                <p class="card-text">Details: The government is seeking proposals for the supply and installation of IT infrastructure in several departments. The tender includes a 2-year maintenance contract.</p>
+                <a href="#" class="btn ">View Tender</a>
+              </div>
+            </div>
+            <!-- More tenders here... -->
+          </div>
+          <!-- Events Tab Content -->
+          <div class="tab-pane fade" id="events" role="tabpanel" aria-labelledby="events-tab">
+            <h4>Upcoming Events</h4>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Tech Conference 2024</h5>
+                <p class="card-text">Date: 12th January 2024</p>
+                <p class="card-text">Details: Join industry experts at the Tech Conference to explore the latest in AI, machine learning, and cloud technologies. This event will feature hands-on workshops and keynote speakers from top tech companies.</p>
+                <a href="#" class="btn btn-info">Register Now</a>
+              </div>
+            </div>
+            <!-- More events here... -->
+          </div>
+          <!-- Recruitment Tab Content -->
+          <div class="tab-pane fade" id="recruitment" role="tabpanel" aria-labelledby="recruitment-tab">
+            <h4>Job Openings</h4>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Software Engineer</h5>
+                <p class="card-text">Company: Tech Solutions Ltd.</p>
+                <p class="card-text">Location: Remote</p>
+                <p class="card-text">Job Description: We are looking for a Software Engineer with expertise in React and Node.js to join our development team. The role involves building scalable web applications and collaborating with cross-functional teams.</p>
+                <a href="#" class="btn btn-success">Apply Now</a>
+              </div>
+            </div>
+            <!-- More jobs here... -->
+          </div>
+          <!-- Notifications Tab Content -->
+          <div class="tab-pane fade" id="notifications" role="tabpanel" aria-labelledby="notifications-tab">
+            <h4>Latest Notifications</h4>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">System Maintenance Notification</h5>
+                <p class="card-text">Date: 26th December 2024</p>
+                <p class="card-text">Details: Our servers will undergo maintenance on 26th December from 2 AM to 4 AM. During this time, some services may be unavailable.</p>
+                <a href="#" class="btn btn-warning">Acknowledge</a>
+              </div>
+            </div>
+            <!-- More notifications here... -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Social Media Icons Section (Right Side) -->
+      <div class="col-12 col-md-6 mt-5">
+        <div class="social-media-icons text-center">
+          <a href="https://facebook.com" target="_blank" class="fab fa-facebook-square facebook-icon"></a>
+          <a href="https://twitter.com" target="_blank" class="fab fa-twitter-square twitter-icon"></a>
+          <a href="https://linkedin.com" target="_blank" class="fab fa-linkedin linkedin-icon"></a>
+          <a href="https://instagram.com" target="_blank" class="fab fa-instagram-square instagram-icon"></a>
+          <a href="https://youtube.com" target="_blank" class="fab fa-youtube youtube-icon"></a>
+          <a href="https://github.com" target="_blank" class="fab fa-github github-icon"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+  <div class="container my-5">
+    <!-- Tab Navigation -->
+    <ul class="nav nav-tabs" id="galleryVideoTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="gallery-tab" data-bs-toggle="tab" data-bs-target="#gallery" type="button" role="tab" aria-controls="gallery" aria-selected="true">Gallery</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="video-tab" data-bs-toggle="tab" data-bs-target="#video" type="button" role="tab" aria-controls="video" aria-selected="false">Video Gallery</button>
+      </li>
+    </ul>
+  
+    <!-- Tab Content -->
+    <div class="tab-content" id="galleryVideoContent">
+      <!-- Gallery Tab -->
+      <div class="tab-pane fade show active" id="gallery" role="tabpanel" aria-labelledby="gallery-tab">
+        <section class="gallery-section container text-center my-5">
+            <div class="row a">
+              <!-- Left Image -->
+              <div class="col-md-6">
+                <img src="https://res.cloudinary.com/patch-gardens/image/upload/c_fill,h_1000,q_auto:good,w_1000/Group_Baskets_InSitu_CROP_s5lzh5.jpg" alt="Plant 1" class="img-fluid rounded">
+              </div>
+        
+              <!-- Right Top and Bottom Images -->
+              <div class="col-md-6 mt-3">
+                <div class="row g-3">
+                  <div class="col-6">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRheKpuH9Ue5eI2c3kvbGjS1K32h6v0gXCXAw&s" alt="Plant 2" class="img-fluid rounded">
+                  </div>
+                  <div class="col-6">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRheKpuH9Ue5eI2c3kvbGjS1K32h6v0gXCXAw&s" alt="Person in Garden" class="img-fluid rounded">
+                  </div>
+                </div>
+                <div class="row g-3 mt-3">
+                    <div class="col-6">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRheKpuH9Ue5eI2c3kvbGjS1K32h6v0gXCXAw&s" alt="Plant 2" class="img-fluid rounded">
+                      </div>
+                       <div class="col-6">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRheKpuH9Ue5eI2c3kvbGjS1K32h6v0gXCXAw&s" alt="Plant 2" class="img-fluid rounded">
+                  </div>
+                  <div class="text-center mt-4">
+                    <h2 class="gallery-title">gallery</h2>
+                    <p class="gallery-description mt-3">
+                      Oh feel if up to till like. He an thing rapid these after going drawn or. Timed she his law the spoil round defer. 
+                      In surprise concerns informed betrayed he learning is ye. Ignorant formerly so ye blessing. He as spoke avoid given 
+                      downs money on we. Of properly carriage shutters ye as wandered up repeated moreover.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+          </section>
+      </div>
+  
+      <!-- Video Tab -->
+      <div class="tab-pane fade" id="video" role="tabpanel" aria-labelledby="video-tab">
+        <section class="video-section container text-center my-5">
+            <div class="row align-items-center">
+              <!-- Left Video -->
+              <div class="col-md-6">
+                <video controls class="video-fluid rounded">
+                  <source src="video1.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <div class="text-center mt-4">
+                    <h2 class="video-title">video gallery</h2>
+                    <p class="video-description mt-3">
+                      Experience our curated collection of videos. From breathtaking scenes to insightful stories, immerse yourself in a world of visual delight. Watch, learn, and be inspired.
+                    </p>
+                  </div>
+              </div>
+        
+              <!-- Right Top and Bottom Videos -->
+              <div class="col-md-6">
+                <div class="row g-3">
+                  <div class="col-6">
+                    <video controls class="video-fluid rounded">
+                      <source src="video2.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  <div class="col-6">
+                    <video controls class="video-fluid rounded">
+                      <source src="video3.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </div>
+                <div class="row g-3 mt-3">
+                  <div class="col-12">
+                    <video controls class="video-fluid rounded">
+                      <source src="video4.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <!-- Title and Description -->
+          
+          </section>
+      </div>
+    </div>
+  </div>
+  <section class="contact-section">
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <!-- Left Content -->
+        <div class="col-md-6 text-center">
+          <h1 class="contact-title">Get in Touch</h1>
+          <p class="contact-description">
+            Have questions or need assistance? We're here to help. Fill out the form or reach us directly!
+          </p>
+          <div class="contact-info mt-4">
+            <p><strong>Email:</strong> support@example.com</p>
+            <p><strong>Phone:</strong> +1 234 567 890</p>
+          </div>
+        </div>
+
+        <!-- Right Form -->
+        <div class="col-md-6">
+          <form class="contact-form p-4 rounded shadow">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+              <label for="name">Your Name</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+              <label for="email">Your Email</label>
+            </div>
+            <div class="form-floating mb-3">
+              <textarea class="form-control" id="message" placeholder="Your Message" style="height: 150px;" required></textarea>
+              <label for="message">Your Message</label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-3d">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="useful-links-section py-5">
+    <div class="container text-center">
+      <h2 class="section-title">Useful Links</h2>
+      <p class="section-description">
+        Explore some helpful resources and tools that can enhance your experience.
+      </p>
+      <div class="row mt-4">
+        <!-- Link 1 -->
+        <div class="col-md-4 mb-3">
+          <a href="#" class="link-card">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Documentation</h5>
+                <p class="card-text">Find detailed guides and API references.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Link 2 -->
+        <div class="col-md-4 mb-3">
+          <a href="#" class="link-card">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Support</h5>
+                <p class="card-text">Get help and resolve your issues quickly.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Link 3 -->
+        <div class="col-md-4 mb-3">
+          <a href="#" class="link-card">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Community</h5>
+                <p class="card-text">Join discussions and connect with others.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer-section">
+    <div class="container">
+      <div class="row text-white py-5">
+        <!-- About Us -->
+        <div class="col-md-4 mb-4">
+          <h4 class="footer-title">About Us</h4>
+          <p class="footer-description">
+            We are committed to providing the best services and resources to our users. Stay connected with us!
+          </p>
+        </div>
+        <!-- Quick Links -->
+        <div class="col-md-4 mb-4">
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <!-- Contact Info -->
+        <div class="col-md-4 mb-4">
+          <h4 class="footer-title">Contact Us</h4>
+          <p><i class="fas fa-envelope"></i> support@example.com</p>
+          <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+          <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- Copyright -->
+      <div class="row">
+        <div class="col-12 text-center">
+          <p class="footer-copyright">
+            &copy; 2024 Your Company. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+<script>
+
+var myCarousel = document.querySelector('#carouselExample');
+var carousel = new bootstrap.Carousel(myCarousel, {
+  interval: 1000, // Slide transition interval in milliseconds (2 seconds)
+  ride: 'carousel' // Automatically start the carousel
+});
+
+</script>
+
+
+  <script>document.querySelectorAll('.dropdown-toggle').forEach(function (dropdown) {
+    dropdown.addEventListener('click', function () {
+        const icon = this.querySelector('.dropdown-icon');
+        if (icon) {
+            icon.textContent = this.parentElement.classList.contains('show') ? '+' : '-';
+        }
+    });
+});
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+ 
+</body>
+</html>
